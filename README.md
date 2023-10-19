@@ -41,3 +41,9 @@ VCS Types:
 
 How: In DVCS we commit to save changes locally and when we want to save changes to server than we push and to get it locally we pull repository
 
+Installing and Setting up git environment:
+Download git cli or gui from link below
+    https://git-scm.com/downloads      // for CLI
+    https://git-scm.com/downloads/guis // for GUI
+
+
