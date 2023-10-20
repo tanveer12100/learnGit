@@ -63,4 +63,12 @@ git reset --hard // to unstage all staged changes and remove all the updated che
 To ignore files, directories and folders:
 create file without name with gitignore extension like .gitignore in master branch of repository, and than write file name and folder names which you want to ignore.
 
+branches are used in git for different context, when a context/scenario is changed a new branch is created for that
+
+git branch               // list all branches
+git branch -v            // show list of branches with details
+git branch new-brnach     // create new branch
+git checkout new-branch   // switch to new branch
+git merge branchname      // merge said branch to active branch
+git log branchname..master // show commit difference in two branches
 
