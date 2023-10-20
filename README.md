@@ -46,4 +46,12 @@ Download git cli or gui from link below
     https://git-scm.com/downloads      // for CLI
     https://git-scm.com/downloads/guis // for GUI
 
+git init // to add folder to git repository, but files are not tracked yet
+
+Command to add files to git repository to be tracked
+git add .
+git add filename filename
+git add *.txt
+
+git commit -m "add files first.txt and second.txt"   // to commit file changes
 
