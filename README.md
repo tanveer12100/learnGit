@@ -55,3 +55,12 @@ git add *.txt
 
 git commit -m "add files first.txt and second.txt"   // to commit file changes
 
+git Hash: 40 character checksum, a unique identifier 
+
+git reset // to unstage all staged files
+git reset --hard // to unstage all staged changes and remove all the updated chenges in files
+
+To ignore files, directories and folders:
+create file without name with gitignore extension like .gitignore in master branch of repository, and than write file name and folder names which you want to ignore.
+
+
