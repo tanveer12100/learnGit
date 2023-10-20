@@ -72,3 +72,5 @@ git checkout new-branch   // switch to new branch
 git merge branchname      // merge said branch to active branch
 git log branchname..master // show commit difference in two branches
 
+stash // to temorarily save without using commit
+
