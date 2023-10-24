@@ -1,1 +1,46 @@
+AngularJS is extension to html using ng-directives
+ng-app  //defines AngularJS application
+ng-model //binds value of html controls including input, select, textarea to application data
+ng-bind //binds application data to html view
+ng-init //initialize angular application variables
+
+AngularJS expressions are written inside double braces: {{ expression }}
+
+Example : 
+<!DOCTYPE html>
+<html>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <body>
+        <div ng-app="myApp" ng-controller="myCtrl">
+            First Name : <input type="text" ng-model="firstname" />
+            <br>
+            Second Name : <input type="text" ng-model="secondname" />
+            <br>
+            Full Name : {{firstname + ' '+ secondname}}
+        </div>
+    </body>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope){
+            $scope.firstname="John";
+            $scope.secondname="Doe";
+        });
+    </script>
+</html>
+
+Same example using ng-bind:
+<div ng-app="" ng-init="quantity=1;cost=5">
+  <p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+</div> 
+
+AngularJS Objects:
+<div ng-app="" ng-init="person={firstName:'John',lastName:'Doe'}">
+  <p>The name is {{ person.lastName }}</p>
+</div> 
+
+<div ng-app="" ng-init="points=[1,15,19,2,40]">
+  <p>The third result is {{ points[2] }}</p>
+</div> 
+
+controller belongs to angular module, module is a container for application controllers
 
